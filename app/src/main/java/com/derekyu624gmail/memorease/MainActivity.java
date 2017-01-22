@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity
 
     private TextView resultTEXT;
     private ArrayList<String> result;
+    private Rehearse session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity
     public void onButtonClick(View v){
         if (v.getId() == R.id.imageButton) {
             promptSpeechInput();
+            
         }
     }
 
@@ -144,4 +147,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
