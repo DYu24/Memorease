@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
     public void onButtonClick(View v){
         if (v.getId() == R.id.imageButton) {
             promptSpeechInput();
-            
+
         }
     }
 
